@@ -7,6 +7,7 @@ public class CoinCounter : MonoBehaviour
 {
     int coins;
     public Text coinText;
+    public Text newcoinText;
 
     public void AddCoin()
     {
@@ -14,4 +15,5 @@ public class CoinCounter : MonoBehaviour
 
         coinText.text = "Coins: " + coins;
     }
+
 }

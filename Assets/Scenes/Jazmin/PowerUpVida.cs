@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerUpVida : MonoBehaviour
 {
+    public float rotationSpeed;
 
     private void Update()
     {
