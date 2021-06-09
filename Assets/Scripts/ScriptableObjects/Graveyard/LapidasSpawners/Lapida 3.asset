@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4664bf1d6187f24581a2874d44e5202, type: 3}
-  m_Name: WavePrueba
+  m_Name: Lapida 3
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
-  spawnDelay: 5
+  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
+  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
+  spawnDelay: 140
