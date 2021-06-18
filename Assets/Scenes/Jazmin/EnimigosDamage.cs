@@ -6,18 +6,17 @@ public class EnimigosDamage : MonoBehaviour
 {
     public float damageAmount = 1f;
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            VidaJugador player = collision.gameObject.GetComponent<VidaJugador>();
+            VidaJugador player = other.GetComponent<VidaJugador>();
             if (player != null)
             {
                 player.Damage(damageAmount);
-                Destroy(this.gameObject);
             }
         }
-
     }
 
 }
