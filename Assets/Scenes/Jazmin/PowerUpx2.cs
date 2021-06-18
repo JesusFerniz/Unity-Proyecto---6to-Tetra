@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class PowerUpx2 : MonoBehaviour
 {
+    bool OnEnable;
 
-    private void Start()
+    void Start()
     {
-        CoinCounter coin = FindObjectOfType<CoinCounter>();
-
+        StartCoroutine(ActivateCoins());
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine(ActivateCoins());
-            Destroy(this.gameObject);
+            if (OnEnable)
+            {
+                StartCoroutine(ActivateCoins());
+            }             
         }
     }
 
 
     IEnumerator ActivateCoins()
     {
-        yield return new WaitForSeconds(7);
+        OnEnable = true;
+        yield return new WaitForSeconds(7f);
+        OnEnable = false;
     }
 }
