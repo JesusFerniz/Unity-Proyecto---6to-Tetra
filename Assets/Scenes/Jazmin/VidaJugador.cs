@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class VidaJugador : MonoBehaviour
 {
-    public float vidasMax = 3;
+    public float vidasMax = 3f;
     public float currentHP;
 
+    private void Start()
+    {
+        currentHP = vidasMax;
+
+    }
 
     public void Damage(float amount)
     {
-        vidasMax -= amount;
+        currentHP -= amount;
         if(currentHP <= 0f)
         {
             Dead();
@@ -20,9 +25,9 @@ public class VidaJugador : MonoBehaviour
 
     public void hpUP()
     {
-        if (vidasMax < 3)
+        if (vidasMax < 3f)
         {
-            vidasMax += 1;          
+            vidasMax += 1f;          
         }
 
     }
