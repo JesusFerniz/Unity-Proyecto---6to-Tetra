@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     // 5. Hacer variable para velocidad de movimiento
     public float speed = 15f;
-
+    public float _rotationSpeed = 180;
     // 6. Agregar variable para velocidad de grabedad
     Vector3 velocity;
 
@@ -37,16 +37,18 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-
+        
         // 1. Agregar inputs
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
+ 
         // 2. Hacer los imputs direcciones, se usa transform para que el movimiento sea en base a donde ve el personaje
-        Vector3 move = transform.right * x + transform.forward * z;
-
+        
+        Vector3 direction = new Vector3(x, 0f ,z);
+        transform.LookAt(transform.position + direction);
         // 4. Hacer que nuestro character controller se mueva
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(direction * speed * Time.deltaTime);
 
         // 14. Hacer equacion para salto
         if(Input.GetButtonDown("Jump") && isGrounded)
