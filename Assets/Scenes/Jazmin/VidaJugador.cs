@@ -6,7 +6,7 @@ public class VidaJugador : MonoBehaviour
 {
     public float vidasMax = 3f;
     public float currentHP;
-
+    public GameObject canvasObject;
     private void Start()
     {
         currentHP = vidasMax;
@@ -19,6 +19,7 @@ public class VidaJugador : MonoBehaviour
         if(currentHP <= 0f)
         {
             Dead();
+            MakeActive();
         }
     }
 
@@ -35,5 +36,11 @@ public class VidaJugador : MonoBehaviour
     private void Dead()
     {
         Destroy(this.gameObject);
+
+    }
+
+    public void MakeActive()
+    {
+        canvasObject.SetActive(true);
     }
 }
