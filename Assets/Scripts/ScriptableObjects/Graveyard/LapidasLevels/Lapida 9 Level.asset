@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6fb7a3acb3defca4eaf866cda519552b, type: 2}
   - {fileID: 11400000, guid: 6fb7a3acb3defca4eaf866cda519552b, type: 2}
   - {fileID: 11400000, guid: 6fb7a3acb3defca4eaf866cda519552b, type: 2}
-  waveDelay: 60
+  waveDelay: 12

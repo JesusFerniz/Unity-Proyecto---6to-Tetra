@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
   - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
   - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
-  spawnDelay: 100
+  spawnDelay: 10
