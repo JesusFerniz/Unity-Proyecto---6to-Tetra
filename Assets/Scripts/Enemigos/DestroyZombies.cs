@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DestroyZombies : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider col)
     {
-        if (collider.gameObject.tag == "Enemy")
+        if(col.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
         }

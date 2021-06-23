@@ -7,7 +7,6 @@ public class PressButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        if (Input.anyKeyDown)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(1);
     }
 }
