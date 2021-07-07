@@ -7,9 +7,13 @@ public class Realentizacion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMovement lento = FindObjectOfType<PlayerMovement>();
+        if(other.CompareTag("Player"))
+        {
+            PlayerMovement lento = FindObjectOfType<PlayerMovement>();
+            lento.Arena();
+        }
 
-
+        
 
 
     }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Invencible : MonoBehaviour
 {
-    public float damageAmount = 1f;
     bool isInvincible;
 
     void Start()
@@ -12,17 +11,15 @@ public class Invencible : MonoBehaviour
         StartCoroutine(Coroutine());
     }
 
-    public void Damage(int daño)
+    public void Damage(float daño)
     {
+        daño = 0f;
         if (isInvincible)
         {
-
-        }
-        else
-        {
             VidaJugador invencible = GetComponent<VidaJugador>();
-            invencible.currentHP -= daño;
+            invencible.currentHP = daño ;
         }
+
     }
 
 
