@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D 10
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
-  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
-  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
+  - {fileID: 1258191013559944596, guid: b92218fe22f8f45469263eefd0b95e42, type: 3}
+  - {fileID: 1258191013559944596, guid: b92218fe22f8f45469263eefd0b95e42, type: 3}
+  - {fileID: 1258191013559944596, guid: b92218fe22f8f45469263eefd0b95e42, type: 3}
   spawnDelay: 10

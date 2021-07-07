@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D 5 Level
   m_EditorClassIdentifier: 
   waves:
-  - {fileID: 11400000, guid: 7aff651db23ceb841bb9f0069a4f5376, type: 2}
-  - {fileID: 11400000, guid: 7aff651db23ceb841bb9f0069a4f5376, type: 2}
-  - {fileID: 11400000, guid: 7aff651db23ceb841bb9f0069a4f5376, type: 2}
+  - {fileID: 11400000, guid: 5fada169de6710c4592407225083fc73, type: 2}
+  - {fileID: 11400000, guid: 5fada169de6710c4592407225083fc73, type: 2}
+  - {fileID: 11400000, guid: 5fada169de6710c4592407225083fc73, type: 2}
   waveDelay: 12
