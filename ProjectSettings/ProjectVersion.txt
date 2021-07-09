@@ -1,6 +1,10 @@
 m_EditorVersion: 2020.2.2f1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 m_EditorVersionWithRevision: 2020.2.2f1 (068178b99f32)
 >>>>>>> Luis07
+=======
+m_EditorVersionWithRevision: 2020.2.2f1 (068178b99f32)
+>>>>>>> JFerniz3
