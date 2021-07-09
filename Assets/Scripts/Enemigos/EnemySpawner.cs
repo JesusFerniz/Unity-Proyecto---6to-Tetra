@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] WayPointPath path = default;
 
     public Action onGameWin;
+    //bool noDamage;
 
     private void Start() => StartCoroutine(CreateWavesCoroutine(level));
 
@@ -36,7 +37,21 @@ public class EnemySpawner : MonoBehaviour
     private void Spawn(GameObject prefab)
     {
         GameObject enemy = Instantiate(prefab, transform.position, transform.rotation);
+
+        //if (noDamage)
+        //{
+
+        //}
+        //Wait to prefab spawner reference
         Movement movement = enemy.GetComponent<Movement>();
         movement.SetPath(path);
     }
+
+    //private IEnumerator Coroutine()
+    //{
+    //    noDamage = true;
+    //    yield return new WaitForSeconds(7f);
+    //    noDamage = false;
+
+    //}
 }

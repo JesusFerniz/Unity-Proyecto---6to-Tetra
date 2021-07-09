@@ -26,9 +26,9 @@ public class VidaJugador : MonoBehaviour
 
     public void hpUP()
     {
-        if (vidasMax < 3f)
+        if (currentHP < 3f)
         {
-            vidasMax += 1f;          
+            currentHP += 1f;          
         }
 
     }
