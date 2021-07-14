@@ -15,11 +15,10 @@ public class PowerUpVida : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            VidaJugador health = FindObjectOfType<VidaJugador>();
-            health.hpUP();
-            Destroy(this.gameObject);
-        }
+        
+        VidaJugador health = FindObjectOfType<VidaJugador>();
+        health.hpUP();
+        Destroy(this.gameObject);
+
     }
 }
