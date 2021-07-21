@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Animator anim;
+
 
     // 3. Referencia a nuestro character controller
     public CharacterController controller;
@@ -26,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
     // 13. Hacer variable para velocidad de salto
     public float jumpHeight = 3f;
+
+    private void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     void Update()
     {
