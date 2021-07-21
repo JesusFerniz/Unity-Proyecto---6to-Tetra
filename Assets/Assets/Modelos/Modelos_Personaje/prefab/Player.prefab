@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2492171476523109686}
-  speed: 2.6
+  speed: 2.5
   _rotationSpeed: 10
   gravity: -44.55
   groundCheck: {fileID: 1601028191}
@@ -106,7 +106,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpHeight: 1.82
+  jumpHeight: 1.7
+  jumpDelay: 100
 --- !u!136 &2492171476523109688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -117,10 +118,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.9259418
-  m_Height: 4.1816134
+  m_Radius: 0.78
+  m_Height: 3.67
   m_Direction: 1
-  m_Center: {x: 2.3319094e-15, y: 0.23745914, z: 0.07523775}
+  m_Center: {x: 2.3319094e-15, y: 0.36, z: 0.07523775}
 --- !u!114 &1951396204
 MonoBehaviour:
   m_ObjectHideFlags: 0
