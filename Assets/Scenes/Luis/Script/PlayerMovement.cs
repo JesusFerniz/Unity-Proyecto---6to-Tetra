@@ -32,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
+<<<<<<< HEAD
+=======
+        //StartCoroutine(Jump());
+>>>>>>> JFerniz6
     }
 
     void Update()
@@ -58,8 +62,10 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(direction * speed * Time.deltaTime);
 
         // 14. Hacer equacion para salto
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            //yield return new WaitForSecondsRealtime(1);
+
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
@@ -68,6 +74,17 @@ public class PlayerMovement : MonoBehaviour
 
         // 9. Ejercer la velocidad de la grabedad sobre el personaje
         controller.Move(velocity * Time.deltaTime);
-
     }
+
+    //public IEnumerator Jump()
+    //{
+
+    //    // 14. Hacer equacion para salto
+    //    if (Input.GetButtonDown("Jump") && isGrounded)
+    //    {
+    //        yield return new WaitForSecondsRealtime(1);
+
+    //        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+    //    }
+    //}
 }
