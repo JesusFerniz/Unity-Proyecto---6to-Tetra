@@ -32,10 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
-<<<<<<< HEAD
-=======
         //StartCoroutine(Jump());
->>>>>>> JFerniz6
     }
 
     void Update()
