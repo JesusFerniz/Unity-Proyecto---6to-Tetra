@@ -15,9 +15,9 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGamePrimerNivel2()
     {
-        if (CompareTag("Coin"))
+        if (true)
         {
-            if (CoinCounter.coins == 150)
+            if (PlayerPrefs.GetInt("Coins_Nivel2", 0) >= 150)
             {
                 SceneManager.LoadScene(3);
             }
@@ -31,9 +31,9 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGamePrimerNivel3()
     {
-        if (CompareTag("Coin"))
+        if (true)
         {
-            if (CoinCounter.coins == 350)
+            if (PlayerPrefs.GetInt("Coins_Nivel3", 0) >= 350)
             {
                 SceneManager.LoadScene(4);
             }

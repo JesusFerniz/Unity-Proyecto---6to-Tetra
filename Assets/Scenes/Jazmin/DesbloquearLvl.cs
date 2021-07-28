@@ -8,16 +8,16 @@ public class DesbloquearLvl : MonoBehaviour
     public Button[] niveles;
     int levelPassed;
 
-    private void Start()
-    {
-        if(CompareTag("Coin"))
-        {
-            if(CoinCounter.coins == 150)
-            {
+    //private void Start()
+    //{
+    //    if(CompareTag("Coin"))
+    //    {
+    //        if(CoinCounter.coins == 150)
+    //        {
                
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
 
 
 

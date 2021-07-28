@@ -4206,6 +4206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a2321caaf651e418151d6cfd97b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: []
 --- !u!224 &5248872334435183253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6115,6 +6116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a2321caaf651e418151d6cfd97b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel:
+  - {fileID: 703002186}
+  - {fileID: 1897197325}
 --- !u!224 &5248872336025677770
 RectTransform:
   m_ObjectHideFlags: 0
