@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public Button[] nivel;
+
     public void PlayGamePrimerNivel()
     {
         SceneManager.LoadScene(2);
@@ -12,12 +15,33 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGamePrimerNivel2()
     {
-        SceneManager.LoadScene(3);
+        if (CompareTag("Coin"))
+        {
+            if (CoinCounter.coins == 150)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else
+            {
+                nivel[3].interactable = false;
+            }
+        }
+
     }
 
     public void PlayGamePrimerNivel3()
     {
-        SceneManager.LoadScene(4);
+        if (CompareTag("Coin"))
+        {
+            if (CoinCounter.coins == 350)
+            {
+                SceneManager.LoadScene(4);
+            }
+            else
+            {
+                nivel[4].interactable = false;
+            }
+        }
     }
 
     public void QuitGame()
