@@ -25,9 +25,13 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.1f;
     public LayerMask groundMask;
     bool isGrounded;
-
+    private float canJump = 0f;
     // 13. Hacer variable para velocidad de salto
     public float jumpHeight = 3f;
+    float x ;
+    float z ;
+
+    bool isinSlowGround;
 
     private void Start()
     {
@@ -45,26 +49,35 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        
-        // 1. Agregar inputs
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
 
- 
+        // 1. Agregar inputs
+
+         x = Input.GetAxis("Horizontal");
+         z = Input.GetAxis("Vertical");
+
         // 2. Hacer los imputs direcciones, se usa transform para que el movimiento sea en base a donde ve el personaje
-        
+
         Vector3 direction = new Vector3(x, 0f ,z);
         transform.LookAt(transform.position + direction);
         // 4. Hacer que nuestro character controller se mueva
-        controller.Move(direction * speed * Time.deltaTime);
+        float currentSpeed = speed;
+        if (isinSlowGround)
+        {
+            currentSpeed = currentSpeed / 2;
+        }
+        controller.Move(direction * currentSpeed * Time.deltaTime);
 
         // 14. Hacer equacion para salto
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded & Time.time > canJump)
         {
             //yield return new WaitForSecondsRealtime(1);
 
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            canJump = Time.time + 3f;
         }
+
+        
+        
 
         // 8. Agregar la gravedad a la velocidad
         velocity.y += gravity * Time.deltaTime;
@@ -73,13 +86,27 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
+    public void Velocidad()
+    {
+        isinSlowGround = true;
+
+
+
+    }
+    public void VelocidadNormal()
+    {
+        isinSlowGround = false;
+
+
+
+    }
     //public IEnumerator Jump()
     //{
 
     //    // 14. Hacer equacion para salto
     //    if (Input.GetButtonDown("Jump") && isGrounded)
     //    {
-    //        yield return new WaitForSecondsRealtime(1);
+    //        yield return new WaitForSecondsRealtime(3);
 
     //        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
     //    }
