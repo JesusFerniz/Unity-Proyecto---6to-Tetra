@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class CoinCounter : MonoBehaviour
 {
     [SerializeField] string lvlName;
+
+    public float nuevo;
     public int coins;
     public Text coinText;
     public Text newcoinText;
@@ -18,6 +20,16 @@ public class CoinCounter : MonoBehaviour
         coins++;
 
         coinText.text = "Coins: " + coins;
+    }
+
+    public void multiplicador(float pordos)
+    {
+        nuevo = pordos * coins;
+    }
+
+    public void Power()
+    {
+        nuevo = coins;
     }
 
 }
