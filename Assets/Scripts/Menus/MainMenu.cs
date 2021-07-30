@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public Button[] nivel;
 
     public void PlayGamePrimerNivel()
