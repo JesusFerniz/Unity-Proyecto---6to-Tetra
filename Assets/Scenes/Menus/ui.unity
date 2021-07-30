@@ -4852,10 +4852,7 @@ GameObject:
   - component: {fileID: 4613146211047564520}
   - component: {fileID: 4613146211047564527}
   - component: {fileID: 4613146211047564523}
-<<<<<<< HEAD
-=======
   - component: {fileID: 4613146211047564528}
->>>>>>> JFerniz6
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -4880,8 +4877,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-<<<<<<< HEAD
-=======
 --- !u!114 &4613146211047564528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4894,7 +4889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a2321caaf651e418151d6cfd97b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> JFerniz6
 --- !u!114 &4613146211097742872
 MonoBehaviour:
   m_ObjectHideFlags: 0
