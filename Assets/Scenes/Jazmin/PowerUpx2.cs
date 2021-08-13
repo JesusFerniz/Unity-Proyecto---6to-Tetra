@@ -18,10 +18,12 @@ public class PowerUpx2 : MonoBehaviour
             if (OnEnable)
             {
                 StartCoroutine(ActivateCoins());
+
+                CoinCounter coin = GetComponent<CoinCounter>();
+                coin.Power();
             }             
         }
     }
-
 
     IEnumerator ActivateCoins()
     {

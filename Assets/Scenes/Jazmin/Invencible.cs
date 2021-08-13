@@ -16,10 +16,6 @@ public class Invencible : MonoBehaviour
     {
         if (isInvincible)
         {
-
-        }
-        else
-        {
             VidaJugador invencible = GetComponent<VidaJugador>();
             invencible.currentHP -= daño;
         }
