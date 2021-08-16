@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2492171476523109686}
-  speed: 2.5
+  speed: 4
   _rotationSpeed: 10
   gravity: -44.55
   groundCheck: {fileID: 1601028191}
@@ -136,7 +136,10 @@ MonoBehaviour:
   vidasMax: 3
   currentHP: 0
   canvasObject: {fileID: 0}
-  hearts: []
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &-1117240065098947476
 Animator:
   serializedVersion: 3
