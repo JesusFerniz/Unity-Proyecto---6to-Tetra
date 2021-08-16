@@ -8301,10 +8301,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1556023494}
     - target: {fileID: 1951396204, guid: 664df96ea3b570a43a6291decb9f29bb, type: 3}
-      propertyPath: hearts.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1951396204, guid: 664df96ea3b570a43a6291decb9f29bb, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 664445841}
@@ -8320,11 +8316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492171476523109685, guid: 664df96ea3b570a43a6291decb9f29bb,
-        type: 3}
-      propertyPath: speed
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2492171476523109687, guid: 664df96ea3b570a43a6291decb9f29bb,
         type: 3}
