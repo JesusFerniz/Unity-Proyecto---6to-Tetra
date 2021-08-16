@@ -15,4 +15,5 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 3b658febf304c644dabd4eb81872a111, type: 2}
   - {fileID: 11400000, guid: 3b658febf304c644dabd4eb81872a111, type: 2}
-  waveDelay: 15
+  - {fileID: 11400000, guid: 3b658febf304c644dabd4eb81872a111, type: 2}
+  waveDelay: 8
