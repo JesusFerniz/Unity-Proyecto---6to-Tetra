@@ -107,7 +107,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   jumpHeight: 1.7
-  jumpDelay: 100
 --- !u!136 &2492171476523109688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -137,6 +136,7 @@ MonoBehaviour:
   vidasMax: 3
   currentHP: 0
   canvasObject: {fileID: 0}
+  hearts: []
 --- !u!95 &-1117240065098947476
 Animator:
   serializedVersion: 3
