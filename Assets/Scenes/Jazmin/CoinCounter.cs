@@ -5,15 +5,47 @@ using UnityEngine.UI;
 
 public class CoinCounter : MonoBehaviour
 {
-    int coins;
+    [SerializeField] string lvlName;
+
+    public bool isActive;
+    public int coins;
     public Text coinText;
     public Text newcoinText;
+    public AudioClip clip;
 
     public void AddCoin()
     {
-        coins++;
+        int Savecoins = PlayerPrefs.GetInt("Coins_" + lvlName, 0);
 
+        if (isActive == true)
+        {
+            Savecoins += 2;
+            coins += 2;
+        }
+        else
+        {
+            Savecoins++;
+            coins++;
+        }
+        PlayerPrefs.SetInt("Coins_" + lvlName, Savecoins);
         coinText.text = "Coins: " + coins;
     }
 
+    public void Power()
+    {
+        if (isActive)
+            return;
+
+        StartCoroutine(ActivarPoderDos());
+    }
+
+    private IEnumerator ActivarPoderDos()
+    {
+        isActive = true;
+        yield return new WaitForSeconds(10f);
+        isActive = false;
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+    }
+
 }
+

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PowerUpVida : MonoBehaviour
 {
     public float rotationSpeed;
+    public AudioClip clip;
 
     private void Update()
     {
@@ -15,7 +16,7 @@ public class PowerUpVida : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
         VidaJugador health = FindObjectOfType<VidaJugador>();
         health.hpUP();
         Destroy(this.gameObject);

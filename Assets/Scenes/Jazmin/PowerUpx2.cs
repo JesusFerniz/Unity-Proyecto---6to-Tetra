@@ -4,29 +4,29 @@ using UnityEngine;
 
 public class PowerUpx2 : MonoBehaviour
 {
+    public float rotationSpeed;
     bool OnEnable;
+    public AudioClip clip;
 
-    void Start()
+
+    private void Update()
     {
-        StartCoroutine(ActivateCoins());
+
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, rotationSpeed * Time.deltaTime, 0f));
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            if (OnEnable)
+            if (!OnEnable)
             {
-                StartCoroutine(ActivateCoins());
-            }             
+                AudioSource.PlayClipAtPoint(clip, this.transform.position);
+                CoinCounter coin = FindObjectOfType<CoinCounter>();
+                coin.Power();
+            }
         }
     }
 
-
-    IEnumerator ActivateCoins()
-    {
-        OnEnable = true;
-        yield return new WaitForSeconds(7f);
-        OnEnable = false;
-    }
 }
