@@ -9,7 +9,7 @@ public class CoinCounter : MonoBehaviour
 
     public bool isActive;
     //public float nuevo;
-    public int coins = 100;
+    public int coins;
     public Text coinText;
     public AudioClip clip;
 
