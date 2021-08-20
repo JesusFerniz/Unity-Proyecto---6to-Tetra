@@ -136,10 +136,14 @@ MonoBehaviour:
   vidasMax: 3
   currentHP: 0
   canvasObject: {fileID: 0}
+<<<<<<< HEAD
   hearts:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+=======
+  clip: {fileID: 8300000, guid: 936f4e60179aab44cae241676cc07d41, type: 3}
+>>>>>>> iazz
 --- !u!95 &-1117240065098947476
 Animator:
   serializedVersion: 3
