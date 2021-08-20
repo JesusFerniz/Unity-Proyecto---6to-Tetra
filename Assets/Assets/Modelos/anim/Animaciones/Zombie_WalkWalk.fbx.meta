@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: 2667949614841947897
     second: Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: A_E
+    second: {fileID: 2100000, guid: e05ed13a38a40b14cb8c4569fbb3e44e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Z_B
+    second: {fileID: 2100000, guid: c092eae8b75ae5741bd52b55c99c67d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Z_H
+    second: {fileID: 2100000, guid: 96f6b0024d2c9014c9db45087dae5f9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Z_H1
+    second: {fileID: 2100000, guid: da17eaf9f62ca6640a765591ca686a08, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
