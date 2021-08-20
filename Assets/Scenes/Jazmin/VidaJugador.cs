@@ -7,12 +7,17 @@ public class VidaJugador : MonoBehaviour
     public float vidasMax = 3f;
     public float currentHP;
     public GameObject canvasObject;
+    public AudioClip clip;
+
     public GameObject[] hearts;
+
+    private bool Isinvensible;
+
     private void Start()
     {
         currentHP = vidasMax;
-
     }
+
     void Update()
     {
         if (currentHP < 1)
@@ -28,23 +33,31 @@ public class VidaJugador : MonoBehaviour
             Destroy(hearts[2].gameObject);
         }
     }
+
     public void Damage(float amount)
     {
-
+        if (Isinvensible)
+            return;
         currentHP -= amount;
-        if(currentHP <= 0f)
+        if (currentHP <= 0f)
         {
             Dead();
             MakeActive();
         }
     }
 
+    public void Invesibilidad()
+    {
+        if (Isinvensible)
+            return;
+        StartCoroutine(ActivarInvesibilidad());
+    }
 
     public void hpUP()
     {
-        if (vidasMax < 3f)
+        if (currentHP < 3f)
         {
-            vidasMax += 1f;          
+            currentHP += 1f;
         }
 
     }
@@ -55,8 +68,17 @@ public class VidaJugador : MonoBehaviour
 
     }
 
-    public void MakeActive()
+public void MakeActive()
     {
         canvasObject.SetActive(true);
     }
+
+    private IEnumerator ActivarInvesibilidad()
+    {
+        Isinvensible = true;
+        yield return new WaitForSeconds(7f);
+        Isinvensible = false;
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+    }
 }
+

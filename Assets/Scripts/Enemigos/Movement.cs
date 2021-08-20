@@ -24,6 +24,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        if (waypoints == null)
+            return;
         Vector3 direction = waypoints[targetWaypoingIndex].position - transform.position;
         direction = direction.normalized;
 
