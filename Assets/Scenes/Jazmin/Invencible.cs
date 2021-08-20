@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Invencible : MonoBehaviour
 {
-    public float rotationSpeed;
+    public float damageAmount = 1f;
     bool isInvincible;
-    public AudioClip clip;
 
-    private void Update()
+    void Start()
     {
+        StartCoroutine(Coroutine());
+    }
 
-<<<<<<< HEAD
     public void Damage(int daño)
     {
         if (isInvincible)
@@ -19,24 +19,14 @@ public class Invencible : MonoBehaviour
             VidaJugador invencible = GetComponent<VidaJugador>();
             invencible.currentHP -= daño;
         }
-=======
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, rotationSpeed * Time.deltaTime, 0f));
-
->>>>>>> iazz
     }
 
 
-    public void OnTriggerEnter(Collider other)
+    private IEnumerator Coroutine()
     {
-        if (other.CompareTag("Player"))
-        {
-            if (!isInvincible)
-            {
-                AudioSource.PlayClipAtPoint(clip, this.transform.position);
-                VidaJugador invencible = other.GetComponent<VidaJugador>();
-                invencible.Invesibilidad();
-            }
-        }
-    }
+        isInvincible = true;
+        yield return new WaitForSeconds(7f);
+        isInvincible = false;
 
+    }
 }
