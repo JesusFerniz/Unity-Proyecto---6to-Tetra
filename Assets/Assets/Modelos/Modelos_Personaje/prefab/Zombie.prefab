@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
+  clip: {fileID: 8300000, guid: e4bf20db8fcedef489d439fe763ce5a3, type: 3}
 --- !u!114 &-5483501628809071410
 MonoBehaviour:
   m_ObjectHideFlags: 0

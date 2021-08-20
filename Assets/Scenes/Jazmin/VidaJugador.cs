@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class VidaJugador : MonoBehaviour
 {
+    public AudioClip clip;
+
     public float vidasMax = 3f;
     public float currentHP;
     public GameObject canvasObject;
-    public AudioClip clip;
+    public AudioClip clip2;
 
     public GameObject[] hearts;
 
@@ -38,6 +40,7 @@ public class VidaJugador : MonoBehaviour
     {
         if (Isinvensible)
             return;
+        AudioSource.PlayClipAtPoint(clip2, this.transform.position);
         currentHP -= amount;
         if (currentHP <= 0f)
         {

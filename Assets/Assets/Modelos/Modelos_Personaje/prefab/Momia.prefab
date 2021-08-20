@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
+  clip: {fileID: 8300000, guid: 89dc8b4c6d5415a44bdbb5442fa60e1d, type: 3}
 --- !u!114 &-7886551447388105101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464232450f82fae47863d577e26419e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   distanceTreshold: 0.25
 --- !u!65 &-3529546985675957189
 BoxCollider:
