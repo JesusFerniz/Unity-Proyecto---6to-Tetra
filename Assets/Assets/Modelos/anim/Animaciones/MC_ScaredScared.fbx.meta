@@ -1,12 +1,55 @@
 fileFormatVersion: 2
-guid: 761bc470eef7f334c8da76832a30a760
+guid: a1d8ac8a9bacddc41a60bc4568755a54
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
-  externalObjects: {}
+      74: 7234524285770931011
+    second: Scared
+  - first:
+      74: -6322904002297367968
+    second: Scared (1)
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_B
+    second: {fileID: 2100000, guid: 24e6f6d6b7de09d468aea1adebfcfcca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_E
+    second: {fileID: 2100000, guid: 4806cb9c097e09f4fa9074573fe90ce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_H
+    second: {fileID: 2100000, guid: f5066e51dfd6989458f8363e99808d9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_Mo
+    second: {fileID: 2100000, guid: ac28ceb831c5dc04cbced4a6b5cb5a68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h1
+    second: {fileID: 2100000, guid: 334261458d2aa0d4893a135632274783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h2
+    second: {fileID: 2100000, guid: 7d75cdbe962f660418f3362b966fc7e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h3
+    second: {fileID: 2100000, guid: 7d75cdbe962f660418f3362b966fc7e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__MC_H1
+    second: {fileID: 2100000, guid: f4647284ec81a8446bfded05e4aed5ce, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,7 +76,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Scared
+      takeName: Scared
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []

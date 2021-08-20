@@ -1,12 +1,32 @@
 fileFormatVersion: 2
-guid: dd141164837c28147b6d403385f93acd
+guid: 7f67305d5b373384db485cceef204580
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
-  externalObjects: {}
+      74: 2667949614841947897
+    second: Walk
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_E
+    second: {fileID: 2100000, guid: e05ed13a38a40b14cb8c4569fbb3e44e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mo_B
+    second: {fileID: 2100000, guid: 0db99aceb38ddcc47885560683f29243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mo_H
+    second: {fileID: 2100000, guid: 61810ab439805e8469259cbf4d7af464, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mo_H1
+    second: {fileID: 2100000, guid: c4245b17329224948a827759b809ab9b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

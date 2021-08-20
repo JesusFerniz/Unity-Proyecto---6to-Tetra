@@ -1,12 +1,52 @@
 fileFormatVersion: 2
-guid: 6ce0dfd08b394e340a79cd48fa9b5028
+guid: 8b29415a0b048fe4b929cac7ad10699a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
-  externalObjects: {}
+      74: 2667949614841947897
+    second: Walk
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_B
+    second: {fileID: 2100000, guid: 24e6f6d6b7de09d468aea1adebfcfcca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_E
+    second: {fileID: 2100000, guid: 4806cb9c097e09f4fa9074573fe90ce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_H
+    second: {fileID: 2100000, guid: f5066e51dfd6989458f8363e99808d9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MC_Mo
+    second: {fileID: 2100000, guid: ac28ceb831c5dc04cbced4a6b5cb5a68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2SG1
+    second: {fileID: 2100000, guid: 334261458d2aa0d4893a135632274783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3SG1
+    second: {fileID: 2100000, guid: 37e839122f546a1409129c6d2b247ed6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4SG1
+    second: {fileID: 2100000, guid: 7d75cdbe962f660418f3362b966fc7e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__MC_H1
+    second: {fileID: 2100000, guid: f4647284ec81a8446bfded05e4aed5ce, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
