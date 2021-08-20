@@ -6,6 +6,7 @@ public class VidaJugador : MonoBehaviour
 {
     public float vidasMax = 3f;
     public float currentHP;
+<<<<<<< HEAD
     public GameObject canvasObject;
     public AudioClip clip;
 
@@ -13,6 +14,11 @@ public class VidaJugador : MonoBehaviour
 
     private bool Isinvensible;
 
+=======
+    public GameObject LoseCanvas;
+    public GameObject[] hearts;
+
+>>>>>>> JFerniz11
     private void Start()
     {
         currentHP = vidasMax;
@@ -65,12 +71,11 @@ public class VidaJugador : MonoBehaviour
     private void Dead()
     {
         Destroy(this.gameObject);
-
     }
 
 public void MakeActive()
     {
-        canvasObject.SetActive(true);
+        LoseCanvas.SetActive(true);
     }
 
     private IEnumerator ActivarInvesibilidad()
