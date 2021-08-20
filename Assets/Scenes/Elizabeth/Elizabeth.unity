@@ -5922,6 +5922,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232813186}
   m_Mesh: {fileID: -2432090755550338912, guid: 1593176d7ce280b4a854d45f9dc5a7dd, type: 3}
+--- !u!1 &246128268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246128269}
+  - component: {fileID: 246128270}
+  m_Layer: 0
+  m_Name: Coin Counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246128269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246128268}
+  m_LocalRotation: {x: -0, y: -0.70710576, z: 0, w: 0.70710784}
+  m_LocalPosition: {x: 129.1851, y: 146.08797, z: 1234.4236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229893273}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &246128270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246128268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914c56c36219b23429e31660f3595ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvlName: Nivel2
+  nuevo: 0
+  coins: 50
+  coinText: {fileID: 0}
+  newcoinText: {fileID: 0}
 --- !u!1 &246795722
 GameObject:
   m_ObjectHideFlags: 0
@@ -32480,6 +32528,7 @@ Transform:
   - {fileID: 151628678}
   - {fileID: 1973361433}
   - {fileID: 1686474883}
+  - {fileID: 246128269}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}

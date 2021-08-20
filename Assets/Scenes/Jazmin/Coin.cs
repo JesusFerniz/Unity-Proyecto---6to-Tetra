@@ -13,13 +13,14 @@ public class Coin : MonoBehaviour
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, rotationSpeed * Time.deltaTime, 0f));
 
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        AudioSource.PlayClipAtPoint(clip, this.transform.position);
-        Destroy(this.gameObject);
-        CoinCounter coincounter = FindObjectOfType<CoinCounter>();
-        coincounter.AddCoin();
-
+        if (other.CompareTag("Player"))
+        {
+            AudioSource.PlayClipAtPoint(clip, this.transform.position);
+            Destroy(this.gameObject);
+            CoinCounter coincounter = FindObjectOfType<CoinCounter>();
+            coincounter.AddCoin();
+        }
     }
 }

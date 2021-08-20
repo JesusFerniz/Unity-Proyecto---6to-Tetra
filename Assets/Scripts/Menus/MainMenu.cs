@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
     {
         if (true)
         {
-            if (PlayerPrefs.GetInt("Coins_Nivel2", 0) >= 150)
+            if (PlayerPrefs.GetInt("Coins_Nivel2", 0) >= 50)
             {
                 SceneManager.LoadScene(3);
             }
@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
     {
         if (true)
         {
-            if (PlayerPrefs.GetInt("Coins_Nivel3", 0) >= 350)
+            if (PlayerPrefs.GetInt("Coins_Nivel3", 0) >= 100)
             {
                 SceneManager.LoadScene(4);
             }

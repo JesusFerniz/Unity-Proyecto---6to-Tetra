@@ -7,29 +7,53 @@ public class CoinCounter : MonoBehaviour
 {
     [SerializeField] string lvlName;
 
-    public float nuevo;
-    public int coins;
+    public bool isActive;
+    //public float nuevo;
+    public int coins = 100;
     public Text coinText;
     public Text newcoinText;
+    public AudioClip clip;
 
     public void AddCoin()
     {
-        int Savecoins = PlayerPrefs.GetInt("Coins_" + lvlName, 0);
-        Savecoins++;
-        PlayerPrefs.SetInt("Coins_" + lvlName, Savecoins);
-        coins++;
+        //int Savecoins = PlayerPrefs.GetInt("Coins_" + lvlName, 0);
+        //Savecoins++;
+        //PlayerPrefs.SetInt("Coins_" + lvlName, Savecoins);
+        //coins++;
 
+        //coinText.text = "Coins: " + coins;
+
+        int Savecoins = PlayerPrefs.GetInt("Coins" + lvlName, 0);
+
+        if (isActive == true)
+        {
+            Savecoins += 2;
+            coins += 2;
+        }
+        else
+        {
+            Savecoins++;
+            coins++;
+        }
+        PlayerPrefs.SetInt("Coins" + lvlName, Savecoins);
         coinText.text = "Coins: " + coins;
-    }
-
-    public void multiplicador(float pordos)
-    {
-        nuevo = pordos * coins;
     }
 
     public void Power()
     {
-        nuevo = coins;
+        //nuevo = coins;
+        if (isActive)
+            return;
+
+        StartCoroutine(ActivarPoderDos());
+    }
+
+    private IEnumerator ActivarPoderDos()
+    {
+        isActive = true;
+        yield return new WaitForSeconds(10f);
+        isActive = false;
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
     }
 
 }
