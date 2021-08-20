@@ -639,6 +639,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17108770}
   m_Mesh: {fileID: 1377690491875479631, guid: c47947ca9c9dbf44f98d8b8bb2de05f9, type: 3}
+--- !u!1 &19554057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8185650263016570332, guid: 9bf04d04bf0f91b4684ce1b9be445fdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1918437886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &20653458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5966,10 +5972,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lvlName: Nivel2
-  nuevo: 0
+  isActive: 0
   coins: 50
   coinText: {fileID: 0}
   newcoinText: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &246795722
 GameObject:
   m_ObjectHideFlags: 0
@@ -38637,6 +38644,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1229893273}
     m_Modifications:
     - target: {fileID: 1951396204, guid: 664df96ea3b570a43a6291decb9f29bb, type: 3}
+      propertyPath: canvasObject
+      value: 
+      objectReference: {fileID: 1552325369}
+    - target: {fileID: 1951396204, guid: 664df96ea3b570a43a6291decb9f29bb, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1918437890}
@@ -38652,11 +38663,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492171476523109685, guid: 664df96ea3b570a43a6291decb9f29bb,
-        type: 3}
-      propertyPath: jumpDelay
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2492171476523109687, guid: 664df96ea3b570a43a6291decb9f29bb,
         type: 3}
@@ -40425,6 +40431,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544637696}
   m_Mesh: {fileID: 1377690491875479631, guid: c47947ca9c9dbf44f98d8b8bb2de05f9, type: 3}
+--- !u!1 &1552325369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8185650262637055159, guid: 9bf04d04bf0f91b4684ce1b9be445fdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1918437886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1556139802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48507,6 +48519,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8185650262637055165, guid: 9bf04d04bf0f91b4684ce1b9be445fdd,
+        type: 3}
+      propertyPath: menuP
+      value: 
+      objectReference: {fileID: 19554057}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf04d04bf0f91b4684ce1b9be445fdd, type: 3}
 --- !u!224 &1918437887 stripped

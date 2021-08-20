@@ -56,33 +56,13 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGamePrimerNivel2()
     {
-        if (true)
-        {
-            if (PlayerPrefs.GetInt("Coins_Nivel2", 0) >= 50)
-            {
-                SceneManager.LoadScene(3);
-            }
-            else
-            {
-                nivel[3].interactable = false;
-            }
-        }
+        SceneManager.LoadScene(3);
 
     }
 
     public void PlayGamePrimerNivel3()
     {
-        if (true)
-        {
-            if (PlayerPrefs.GetInt("Coins_Nivel3", 0) >= 100)
-            {
-                SceneManager.LoadScene(4);
-            }
-            else
-            {
-                nivel[4].interactable = false;
-            }
-        }
+        SceneManager.LoadScene(4);
     }
 
     public void QuitGame()

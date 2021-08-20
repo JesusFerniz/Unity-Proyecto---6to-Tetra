@@ -23,7 +23,7 @@ public class CoinCounter : MonoBehaviour
 
         //coinText.text = "Coins: " + coins;
 
-        int Savecoins = PlayerPrefs.GetInt("Coins" + lvlName, 0);
+        int Savecoins = PlayerPrefs.GetInt("Coins_" + lvlName, 0);
 
         if (isActive == true)
         {
@@ -35,8 +35,8 @@ public class CoinCounter : MonoBehaviour
             Savecoins++;
             coins++;
         }
-        PlayerPrefs.SetInt("Coins" + lvlName, Savecoins);
-        coinText.text = "Coins: " + coins;
+        PlayerPrefs.SetInt("Coins_" + lvlName, Savecoins);
+        coinText.text = "Coins: " + Savecoins;
     }
 
     public void Power()
