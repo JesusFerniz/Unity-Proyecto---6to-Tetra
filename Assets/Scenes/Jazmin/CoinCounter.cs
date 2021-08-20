@@ -11,7 +11,6 @@ public class CoinCounter : MonoBehaviour
     //public float nuevo;
     public int coins = 100;
     public Text coinText;
-    public Text newcoinText;
     public AudioClip clip;
 
     public void AddCoin()
