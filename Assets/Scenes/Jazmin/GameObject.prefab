@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &5740028039220999984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632886750676521872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8370405, y: 1.8833439, z: 0.2834928}
+  m_Center: {x: -0.14332685, y: 0.9080306, z: 0.022693276}
 --- !u!95 &644693309228761828
 Animator:
   serializedVersion: 3
@@ -19,6 +32,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3463807863212344528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632886750676521872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39e4ce6be2b1db4dbb65b250ca9c5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
+  clip: {fileID: 8300000, guid: 482e17f6cccffcb43beb1386a9914753, type: 3}
+  anim: {fileID: 0}
 --- !u!1 &1978208955019507485
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,8 +56,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8356407411041584820}
-  - component: {fileID: -7983838064305774080}
-  - component: {fileID: -691036370330928916}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -52,32 +78,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7983838064305774080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978208955019507485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f39e4ce6be2b1db4dbb65b250ca9c5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 1
---- !u!65 &-691036370330928916
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978208955019507485}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4146297, y: 0.8846431, z: 0.23763943}
-  m_Center: {x: 0.98371994, y: 0.4086802, z: -0.99637413}
 --- !u!1001 &1755440531186602660
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,6 +7,14 @@ public class EnimigosDamage : MonoBehaviour
     public float damageAmount = 1f;
     public AudioClip clip;
 
+    public Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -15,6 +23,7 @@ public class EnimigosDamage : MonoBehaviour
             if (player != null)
             {
                 AudioSource.PlayClipAtPoint(clip, this.transform.position);
+                anim.SetTrigger("Catch");
                 player.Damage(damageAmount);
             }
         }

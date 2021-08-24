@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: M2
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 5770416751294123306, guid: 83373dc962c2ada4486358f5038f19ff, type: 3}
-  - {fileID: 5770416751294123306, guid: 83373dc962c2ada4486358f5038f19ff, type: 3}
-  - {fileID: 5770416751294123306, guid: 83373dc962c2ada4486358f5038f19ff, type: 3}
-  - {fileID: 5770416751294123306, guid: 83373dc962c2ada4486358f5038f19ff, type: 3}
+  - {fileID: 425348745932112540, guid: ad8bc2560e9217d4e9b7a0431ac950e5, type: 3}
+  - {fileID: 425348745932112540, guid: ad8bc2560e9217d4e9b7a0431ac950e5, type: 3}
+  - {fileID: 425348745932112540, guid: ad8bc2560e9217d4e9b7a0431ac950e5, type: 3}
+  - {fileID: 425348745932112540, guid: ad8bc2560e9217d4e9b7a0431ac950e5, type: 3}
   spawnDelay: 10

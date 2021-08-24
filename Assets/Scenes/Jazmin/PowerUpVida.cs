@@ -7,6 +7,8 @@ public class PowerUpVida : MonoBehaviour
     public float rotationSpeed;
     public AudioClip clip;
 
+
+
     private void Update()
     {
 

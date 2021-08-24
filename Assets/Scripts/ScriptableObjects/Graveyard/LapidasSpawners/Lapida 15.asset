@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Lapida 15
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 4227789044945564321, guid: 004443675d6371f458dab07d513efaca, type: 3}
+  - {fileID: 4762235341721496793, guid: d91d1efe95c09d84b809468d1e5fc21b, type: 3}
   spawnDelay: 5

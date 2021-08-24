@@ -63,7 +63,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator Timer()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 30; i++)
         {
             currentSpawnPoints = new List<GameObject>(spawnPoints.ToArray());
             CleanMap();

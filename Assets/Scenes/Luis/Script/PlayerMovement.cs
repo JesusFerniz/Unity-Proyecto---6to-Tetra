@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Animator anim;
-
 
     // 3. Referencia a nuestro character controller
     public CharacterController controller;
@@ -33,11 +31,6 @@ public class PlayerMovement : MonoBehaviour
 
     bool isinSlowGround;
 
-    private void Start()
-    {
-        anim = GetComponentInChildren<Animator>();
-        //StartCoroutine(Jump());
-    }
 
     void Update()
     {
@@ -53,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         // 1. Agregar inputs
 
          x = Input.GetAxis("Horizontal");
-         z = Input.GetAxis("Vertical");
+        z = Input.GetAxis("Vertical");
 
         // 2. Hacer los imputs direcciones, se usa transform para que el movimiento sea en base a donde ve el personaje
 
@@ -89,9 +82,6 @@ public class PlayerMovement : MonoBehaviour
     public void Velocidad()
     {
         isinSlowGround = true;
-
-
-
     }
     public void VelocidadNormal()
     {

@@ -128,6 +128,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 200
   clip: {fileID: 8300000, guid: 54a55fb493fddac43998fae5048e44dd, type: 3}
+  canvasObject: {fileID: 0}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!135 &4310797369251531670
 SphereCollider:
   m_ObjectHideFlags: 0
