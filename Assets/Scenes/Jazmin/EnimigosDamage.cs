@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnimigosDamage : MonoBehaviour
 {
+    [SerializeField] public GameObject particlesPrefab = default;
+
     public float damageAmount = 1f;
     public AudioClip clip;
 
@@ -24,6 +26,8 @@ public class EnimigosDamage : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(clip, this.transform.position);
                 anim.SetTrigger("Catch");
+                GameObject particles = Instantiate(particlesPrefab, transform.position, transform.rotation);
+                Destroy(particles, 1f);
                 player.Damage(damageAmount);
             }
         }

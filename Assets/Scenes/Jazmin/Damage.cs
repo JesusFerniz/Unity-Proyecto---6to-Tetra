@@ -7,6 +7,8 @@ public class Damage : MonoBehaviour
     public float damageAmount = 1f;
     public AudioClip clip;
 
+    [SerializeField] public GameObject particlesPrefab = default;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -15,6 +17,8 @@ public class Damage : MonoBehaviour
             if (player != null)
             {
                 AudioSource.PlayClipAtPoint(clip, this.transform.position);
+                GameObject particles = Instantiate(particlesPrefab, transform.position, transform.rotation);
+                Destroy(particles, 1f);
                 player.Damage(damageAmount);
             }
         }

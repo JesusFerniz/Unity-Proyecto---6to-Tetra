@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1127052332843505735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4381365053804359981}
+  - component: {fileID: 6253217266969350417}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4381365053804359981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127052332843505735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6588790252698572847}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6253217266969350417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127052332843505735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4349034, y: 2.6767862, z: 2.7604713}
+  m_Center: {x: 0.09042671, y: 0.8383917, z: 0.15644738}
 --- !u!1 &4660058094827054776
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,9 +134,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6588790252698572847}
-  - component: {fileID: 4775698563113610198}
-  - component: {fileID: 6696821576241305581}
-  - component: {fileID: 4482771666915246045}
+  - component: {fileID: 2021052053994701713}
+  - component: {fileID: 8741715397068677638}
   m_Layer: 0
   m_Name: Serpientes
   m_TagString: Untagged
@@ -113,10 +156,11 @@ Transform:
   m_Children:
   - {fileID: 6107792011334163885}
   - {fileID: 1149063622589720813}
+  - {fileID: 4381365053804359981}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4775698563113610198
+--- !u!114 &2021052053994701713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,27 +169,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5781431700023657109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f39e4ce6be2b1db4dbb65b250ca9c5fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 73ecd9bd3b3fbe945bbb3965e9ca6359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
---- !u!54 &6696821576241305581
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5781431700023657109}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &4482771666915246045
+  clip: {fileID: 8300000, guid: 482e17f6cccffcb43beb1386a9914753, type: 3}
+  particlesPrefab: {fileID: 4030459468368446746, guid: 4725b47ec7c6625498d6e9be34f4fb42,
+    type: 3}
+--- !u!65 &8741715397068677638
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,8 +187,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6789696, y: 4.6569867, z: 1.6745812}
-  m_Center: {x: 0.03821329, y: 1.8284928, z: 0.008285107}
+  m_Size: {x: 3.2472672, y: 5.4139585, z: 2.971815}
+  m_Center: {x: 0.28397414, y: 2.206979, z: 0.13569854}
 --- !u!1 &7534229967103300519
 GameObject:
   m_ObjectHideFlags: 0

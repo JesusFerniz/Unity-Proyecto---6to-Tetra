@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39e4ce6be2b1db4dbb65b250ca9c5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlesPrefab: {fileID: 4030459468368446746, guid: 4725b47ec7c6625498d6e9be34f4fb42,
+    type: 3}
   damageAmount: 1
   clip: {fileID: 8300000, guid: 9704eb3406f62da489b6d5abb031ed25, type: 3}
   anim: {fileID: 2021408860488412196}
@@ -188,7 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distanceTreshold: 0.25
-  anim: {fileID: 2021408860488412196}
 --- !u!65 &425348745932112543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -200,8 +201,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.027582718, y: 0.042987373, z: 0.0320181}
-  m_Center: {x: -0.0010278308, y: 0.020020103, z: -0.0020752107}
+  m_Size: {x: 0.025502888, y: 0.04133644, z: 0.026715683}
+  m_Center: {x: -0.0015349496, y: 0.019194638, z: 0.0005759961}
 --- !u!54 &425348745932112542
 Rigidbody:
   m_ObjectHideFlags: 0

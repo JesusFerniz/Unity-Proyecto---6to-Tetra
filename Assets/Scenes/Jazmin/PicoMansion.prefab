@@ -91,8 +91,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1119150979139764878}
   - component: {fileID: 7507400112915501824}
-  - component: {fileID: 9102388387984583607}
   - component: {fileID: 7507400112915501825}
+  - component: {fileID: 9102388387984583607}
   m_Layer: 0
   m_Name: Pico_Mansion
   m_TagString: Untagged
@@ -128,6 +128,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1212876, y: 4.337596, z: 3.030427}
   m_Center: {x: -0.2644024, y: 2.152583, z: 0.13238052}
+--- !u!114 &7507400112915501825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7507400112915501826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ecd9bd3b3fbe945bbb3965e9ca6359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
+  clip: {fileID: 8300000, guid: 482e17f6cccffcb43beb1386a9914753, type: 3}
+  particlesPrefab: {fileID: 4030459468368446746, guid: 4725b47ec7c6625498d6e9be34f4fb42,
+    type: 3}
 --- !u!95 &9102388387984583607
 Animator:
   serializedVersion: 3
@@ -147,20 +163,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7507400112915501825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7507400112915501826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73ecd9bd3b3fbe945bbb3965e9ca6359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 1
-  clip: {fileID: 8300000, guid: 482e17f6cccffcb43beb1386a9914753, type: 3}
 --- !u!1 &8475364883958709091
 GameObject:
   m_ObjectHideFlags: 0

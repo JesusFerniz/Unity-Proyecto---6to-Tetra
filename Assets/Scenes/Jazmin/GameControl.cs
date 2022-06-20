@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private Timer timer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public GameObject player;
+
+	public GameObject canvasObject;
+	public GameObject contador;
+
+	void Start()
+	{
+		timer = gameObject.GetComponent<Timer>();
+		startGame();
+
+	}
+
+	public void startGame()
+	{
+		timer.startTimer();
+	}
+
+	public void endGame()
+	{
+		timer.stopTimer();
+		Destroy(player);
+		canvasObject.SetActive(true);
+		contador.SetActive(false);
+	}
 }

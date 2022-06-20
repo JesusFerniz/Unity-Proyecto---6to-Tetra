@@ -10,6 +10,8 @@ public class VidaJugador : MonoBehaviour
     public float currentHP;
     public GameObject canvasObject;
 
+    public GameObject contador;
+
     public GameObject bola;
 
     public AudioClip clip2;
@@ -83,6 +85,7 @@ public class VidaJugador : MonoBehaviour
     private void Dead()
     {
         Destroy(this.gameObject);
+        contador.SetActive(false);
 
     }
 
